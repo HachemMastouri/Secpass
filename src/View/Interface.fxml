@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InterfaceController">
+   <right>
+      <AnchorPane prefHeight="442.0" prefWidth="350.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username" layoutX="101.0" layoutY="180.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #00539C; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="password" layoutX="101.0" layoutY="237.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #00539C; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button layoutX="204.0" layoutY="283.0" mnemonicParsing="false" onAction="#authentification" style="-fx-background-color: #00539C;" text="Log in" textFill="WHITE" />
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="71.0" layoutY="179.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@png-clipart-profile-logo-computer-icons-user-user-blue-heroes-thumbnail.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="71.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="18.0" layoutY="125.0" prefHeight="40.0" prefWidth="317.0" text="Enter the main application account :" textAlignment="CENTER" textFill="#00539c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="453.0" textFill="#00539c" />
+            <Label layoutX="13.0" layoutY="389.0" text="Wanna Get a random Password , " textFill="#00539c" />
+            <Button layoutX="187.0" layoutY="385.0" mnemonicParsing="false" onAction="#ToGeneratePassword" style="-fx-background-color: #00539c;" text="Generate Password" textFill="WHITE" />
+            <Button layoutX="176.0" layoutY="428.0" mnemonicParsing="false" onAction="#toanyproblem" style="-fx-background-color: #00539c;" text="Forget Your Password !" textFill="WHITE" />
+            <Label layoutX="110.0" layoutY="432.0" text="OR did you ," textFill="#00539c" />
+            <Label layoutX="129.0" layoutY="332.0" />
+            <Label fx:id="alert" layoutX="18.0" layoutY="332.0" textFill="#f20b03" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #00539C;" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="86.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SEC(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="237.0" text="SecPass: Your Trusted Password Manager" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="276.0" text="Secure, Simple and in Control" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

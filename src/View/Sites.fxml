@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bpst" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SitesController">
+   <top>
+      <AnchorPane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #00539c;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="99.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SEC(1).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="622.0" layoutY="32.0" mnemonicParsing="false" onAction="#touserslistview" style="-fx-background-color: #ffffff;" text="Cancel" textFill="#00539c" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="412.0" prefWidth="97.0" style="-fx-background-color: #00539c;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="593.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="330.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="596.0">
+               <children>
+                  <Button layoutX="30.0" layoutY="39.0" mnemonicParsing="false" onAction="#AddSite" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #00539c;" text="Add Site" textFill="WHITE" AnchorPane.rightAnchor="417.0" />
+                  <Button layoutX="230.0" layoutY="39.0" mnemonicParsing="false" onAction="#RemoveSite" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #00539c;" text="Remove Site" textFill="WHITE" />
+                  <Button layoutX="420.0" layoutY="39.0" mnemonicParsing="false" onAction="#ShowPassword" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #00539c;" text="Show Password" textFill="WHITE" />
+               </children></AnchorPane>
+            <TableView fx:id="table" layoutX="-3.0" prefHeight="339.0" prefWidth="600.0" style="-fx-background-color: eaac8b;" stylesheets="@ForTableView.css">
+              <columns>
+                <TableColumn fx:id="site" prefWidth="105.0" style="-fx-border-color: #00539c;" text="Site" />
+                <TableColumn fx:id="username" minWidth="0.0" prefWidth="203.0" style="-fx-border-color: #00539c;" text="Username" />
+                  <TableColumn fx:id="password" prefWidth="64.0" style="-fx-border-color: #00539c;" text="Password" />
+                  <TableColumn fx:id="hash" prefWidth="234.0" style="-fx-border-color: #00539c;" text="Hash" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

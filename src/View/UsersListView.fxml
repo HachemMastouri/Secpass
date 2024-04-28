@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpls" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UsersListViewController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="174.0" style="-fx-background-color: #00539c;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="144.0" layoutX="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SEC(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="6.0" layoutY="332.0" text="Do you want to Change User : " textFill="WHITE" />
+            <Button layoutX="24.0" layoutY="361.0" mnemonicParsing="false" onAction="#tousersinteface" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: ffffff;" text="Change User" textFill="#00539c" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="Mylistview" layoutX="1.0" layoutY="3.0" prefHeight="309.0" prefWidth="424.0" />
+            <Label fx:id="Mylabel" alignment="CENTER" layoutY="363.0" prefHeight="26.0" prefWidth="242.0" textFill="#00539c">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="254.0" layoutY="364.0" mnemonicParsing="false" onAction="#tologinas" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #00539c;" text="Connect" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="327.0" prefHeight="17.0" prefWidth="426.0" text="Choose Your Account : " textFill="#00539c">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
